@@ -1,0 +1,13 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.*;
+import org.springframework.web.bind.annotation.*;
+
+@Controller
+public class Controller01 {
+	
+	@GetMapping
+	public void method() {
+		System.out.println("일함");
+	}
+}

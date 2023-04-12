@@ -1,0 +1,20 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.*;
+import org.springframework.web.bind.annotation.*;
+
+import jakarta.servlet.http.*;
+
+@Controller
+@RequestMapping("sub4")
+public class Controller04 {
+	
+	@RequestMapping("link1")
+	public void method1(HttpServletRequest request) {
+		String name = request.getParameter("name");
+		String age = request.getParameter("age");
+		
+		System.out.println(name);
+	}
+
+}
