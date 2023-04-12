@@ -1,0 +1,7 @@
+package com.example.demo.domain;
+
+public class Dto02 {
+	private String model;
+	private String company;
+	private int	price;
+}

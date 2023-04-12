@@ -1,0 +1,10 @@
+package com.example.demo.domain;
+
+import lombok.*;
+
+@Setter
+@Getter
+public class Dto02 {
+	private String model;
+	private String company;
+	private int price;

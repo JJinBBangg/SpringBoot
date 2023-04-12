@@ -1,0 +1,17 @@
+package com.example.demo.controller;
+
+import java.util.*;
+
+import org.springframework.stereotype.*;
+import org.springframework.ui.*;
+import org.springframework.web.bind.annotation.*;
+
+@Controller
+@RequestMapping("sub7")
+public class Controller07 {
+
+	@RequestMapping("link1")
+	public void method1(Model model) {
+		model.addAttribute("list", List.of("서태웅", "강백호"));
+	}
+}

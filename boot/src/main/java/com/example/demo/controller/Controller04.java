@@ -40,9 +40,23 @@ public class Controller04 {
 		return "";
 	}
 	
+	// sub4/link5?email=aingdevil10@naver.com
+	// parameter의 변수명과 query string name값이 같으면 @RequestParam 생략가능
 	@RequestMapping("link5")
 	public String method5(String eamil) {
 		System.out.println(eamil);
+		return "";
+	}
+	
+	@RequestMapping("link6")
+	public String method6(/* @RequestParam(name="age", defaultValue = "0") */int age) {
+		System.out.println(age);
+		return "";
+	}
+	
+	@RequestMapping("link7")
+	public String method7(double score) {
+		System.out.println(score);
 		return "";
 	}
 }

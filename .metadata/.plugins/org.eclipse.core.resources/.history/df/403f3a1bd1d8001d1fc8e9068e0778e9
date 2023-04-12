@@ -1,0 +1,32 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.*;
+import org.springframework.ui.*;
+import org.springframework.web.bind.annotation.*;
+
+
+@Controller
+@RequestMapping("sub6")
+public class Controller06 {
+	
+	@RequestMapping("link1")
+	public String method1() {
+		System.out.println("link1 메소드 일함");
+		return "/sub6/link2";
+	}
+	@RequestMapping("link2")
+	public String method2() {
+		System.out.println("link2 메소드 일함");
+		return "redirect:/sub6/link3";
+	}
+	@RequestMapping("link3")
+	public String method3() {
+		System.out.println("link3 메소드 일함");
+		return "";
+	}
+	@RequestMapping("link4")
+	public String method4(Model model) {
+		model.addAttribute("");
+		return "/views/abc.jsp";
+	}
+}
