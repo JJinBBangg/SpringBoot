@@ -10,10 +10,6 @@ import org.springframework.web.bind.annotation.*;
 public class Controller11 {
 	@RequestMapping("link1")
 	public void method1() {
-		String url = "";
-		String name = "";
-		String passward = "";
-
 		Connection con;
 		try {
 			con = DriverManager.getConnection(url, name, passward);
