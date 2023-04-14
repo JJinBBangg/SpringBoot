@@ -48,7 +48,7 @@
 		</div>
 	</nav>
 	<main>
-		<h1>공지사항</h1>
+		<h1> <a href="/notice"> 공지사항</a></h1>
 		<table class="table">
 			<thead>
 				<tr>

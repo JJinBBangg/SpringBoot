@@ -1,6 +1,7 @@
 package com.project.controller;
 
 import org.springframework.stereotype.*;
+import org.springframework.web.bind.annotation.*;
 
 import com.project.repository.NoriceRepository.*;
 
@@ -14,4 +15,14 @@ public class NoticeController {
 		this.noticeRepository = repository;
 	}
 	
+	@GetMapping("notice")
+	public String notice() {
+		
+		return "/notice/notice";
+	}
+	@GetMapping("/notice/detail")
+	public String noticeDetail() {
+		
+		return "/notice/noticeDetail";
+	}
 }
