@@ -2,13 +2,15 @@ package com.example.demo.domain;
 
 import lombok.*;
 
-@Setter
 @Getter
+@Setter
 @ToString
 @EqualsAndHashCode
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class Dto03 {
 	private String name;
 	private int age;
+	
+	
 }
