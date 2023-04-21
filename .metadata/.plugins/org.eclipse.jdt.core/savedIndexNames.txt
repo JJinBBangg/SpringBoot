@@ -29,7 +29,6 @@ INDEX VERSION 1.132+C:\study\Spring\boot\.metadata\.plugins\org.eclipse.jdt.core
 4277791090.index
 1156815694.index
 653154600.index
-4271037382.index
 3827557156.index
 2015900472.index
 3727660605.index
@@ -49,7 +48,6 @@ INDEX VERSION 1.132+C:\study\Spring\boot\.metadata\.plugins\org.eclipse.jdt.core
 3787876787.index
 4195948221.index
 293713262.index
-1771258250.index
 4058624334.index
 3149947285.index
 3173803223.index
@@ -81,4 +79,3 @@ INDEX VERSION 1.132+C:\study\Spring\boot\.metadata\.plugins\org.eclipse.jdt.core
 895702470.index
 2454751625.index
 59788392.index
-2203351272.index

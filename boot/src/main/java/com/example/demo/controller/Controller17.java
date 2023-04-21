@@ -138,23 +138,23 @@ public class Controller17 {
 		}
 	}
 	@RequestMapping("link5") //id로 고객 조회
-	public void mehtod5(int id, Model model) {
+	public String mehtod5(int customerId, Model model) {
 		String sql = """
 				SELECT * FROM Customers WHERE CustomerID = ?
 				""";
 		try (Connection con = DriverManager.getConnection(url, username, password);
 				PreparedStatement st = con.prepareStatement(sql)) {
-			st.setInt(1, id);
+			st.setInt(1, customerId);
 			ResultSet rs = st.executeQuery();
 			rs.next();
 			Customer customer = new Customer(
-//					rs.getInt("CustomerID"),
-//					rs.getString("customerName"),
-//					rs.getString("contactName"),
-//					rs.getString("address"),
-//					rs.getString("city"),
-//					rs.getString("postalCode"),
-//					rs.getString("country")
+					rs.getInt("customerId"),
+					rs.getString("customerName"),
+					rs.getString("address"),
+					rs.getString("contactName"),
+					rs.getString("city"),
+					rs.getString("postalCode"),
+					rs.getString("country")
 					);
 			model.addAttribute("customer", customer);
 			rs.close();
@@ -162,7 +162,7 @@ public class Controller17 {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		return "/sub22/link3";
 	}
 	@RequestMapping("link6")
 	public String mehto6(Customer customer) {

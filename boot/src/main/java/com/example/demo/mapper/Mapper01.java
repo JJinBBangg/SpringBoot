@@ -42,7 +42,7 @@ public interface Mapper01 {
 	Employee method6(Integer id);
 	
 	
-	// 페이징 처리
+	// 검색 기능
 	@Select("""
 			<script>
 			SELECT * FROM Customers
