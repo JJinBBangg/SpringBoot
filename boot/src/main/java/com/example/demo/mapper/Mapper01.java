@@ -40,4 +40,17 @@ public interface Mapper01 {
 			WHERE EmployeeID = #{id}
 			""")
 	Employee method6(Integer id);
+	
+	
+	// 페이징 처리
+	@Select("""
+			<script>
+			SELECT * FROM Customers
+			<if test='id != null and !id.equals("")'>
+				AND #{} LIKE '%#{}%'
+			</if>
+			</script>
+			""")
+	Customer method7(String id,String culomn, String search);
+	
 }
