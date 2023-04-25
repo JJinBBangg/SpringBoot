@@ -56,6 +56,7 @@ public class ExController {
 	}
 	@GetMapping("/13")
 	public String method13() {
-		return "Event";
+		System.out.println("dd");
+		return "view/event";
 	}
 }

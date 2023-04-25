@@ -13,7 +13,7 @@
 <body>
 <body>
 	<h1>${customer.customerId }번 고객 수정</h1>
-	<form action="/sub24/link2"> 
+	<form action="/sub24/link2" mehtod="post"> 
 		수정할 고객번호 조회
 		<input type="text" name="customerId" placeholder="번호를 입력하세요.">
 		<input type="submit" value="조회">
