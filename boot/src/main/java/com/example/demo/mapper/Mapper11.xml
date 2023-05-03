@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.Mapper11" >
+    <resultMap type="com.example.demo.domain.Category" id="categoryWithProductNames">
+        <result column="CategoryId"           	     property="id"/>
+        <result column="CategoryName"                  property="name"/>
+        <result column="Description"                   property="description"/>
+        <collection property="productNames" ofType="String">
+            <result column="ProductName" />
+        </collection>
+    </resultMap>
+    <resultMap type="com.example.demo.domain.Category" id="categoryResultMap">
+    	<id column="CategoryId" 			property="id"></id>
+    	<result column="CategoryName" 		property="name"></result>
+    	<result column="description" 		property="description"></result>
+    	<collection property="product" 	ofType="com.example.demo.domain.Product">
+    		<result column="ProductName" 	property="name"></result>
+    		<result column="Price" 			property="price"></result>
+    	</collection>
+    </resultMap>
+        <resultMap type="com.example.demo.domain.Supplier" id="supplierWithProductsAndCategory">
+    	<id column="supplierId" 					property="supplierId"></id>
+    	<result column="supplierName" 			property="supplierName"></result>
+    	<result column="contactName" 				property="contactName"></result>
+    	<result column="address" 					property="address"></result>
+    	<result column="city" 					property="city"></result>
+    	<result column="country" 					property="country"></result>
+    	<collection property="products" 	ofType="com.example.demo.domain.Products">
+    		<result column="productName" 			property="productName"></result>
+    		<result column="price" 				property="price"></result>
+    		<result column="categoryId" 			property="categoryId"></result>
+    	</collection>
+    	<collection property="categories" 	ofType="com.example.demo.domain.Category">
+    		<result column="categoryName" 				property="name"></result>
+    		<result column="description" 			property="description"></result>
+    	</collection>
+    </resultMap>
+</mapper>

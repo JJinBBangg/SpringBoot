@@ -62,6 +62,18 @@ public interface Mapper05 {
 			WHERE CustomerId = #{id}
 			""")
 	Customer sql5(Integer id);
+
+	
+	@Select("""
+			<script>
+			SELECT AVG(Price)
+			FROM Products
+			<if test="id != 0">
+				WHERE CategoryID= #{id}
+			</if>
+			</script>
+			""")
+	void sql6(int id);
 }
 
 

@@ -25,14 +25,12 @@ public class Controller21 {
 	public void method2() {
 		List<Product> productList = mapper.method2();
 		productList.stream().forEach(p -> {
-			System.out.println("이름 : "+p.getProductName()+"\n가격 : " + p.getPrice());
 		});
 	}
 	@RequestMapping("link3/{id}")
 	public void method3(@PathVariable int id) {
 		List<Product> productList = mapper.method3(id);
 		productList.stream().forEach(p -> {
-			System.out.println("이름 : "+p.getProductName()+"\n가격 : " + p.getPrice());
 		});
 	}
 }
