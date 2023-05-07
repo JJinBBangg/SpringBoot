@@ -18,6 +18,11 @@
 		<input type="file"  name="files" multiple/>
 		<input type="submit"  value="전송"/>
 	</form>
+		<form action="/sub32/link5"  method="post" >
+		<input type="text"  name="fileNames"/>
+		<input type="text"  name="fileNames"/>
+		<input type="submit"  value="전송"/>
+	</form>
 
 
 

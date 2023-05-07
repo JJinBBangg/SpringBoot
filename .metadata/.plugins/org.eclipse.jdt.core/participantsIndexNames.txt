@@ -13,6 +13,8 @@ C:\study\Spring\boot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\28978
 \boot20230411-t\src\main\java
 C:\study\Spring\boot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\168979293.index
 \firstSpringBootProject\src\main\java
+C:\study\Spring\boot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4281673141.index
+\boot\src\main\java
 C:\study\Spring\boot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3861779700.index
 \boot\src\main\java
 C:\study\Spring\boot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\251243747.index
